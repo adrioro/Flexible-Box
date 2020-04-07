@@ -74,3 +74,22 @@ body{
 .flexEnd {
   align-items: flex-end;
 }
+.stretching {
+  align-items: stretch;
+}
+.strechBox {
+  background-color: rgb(149, 49, 31);
+  height: 450px;
+}
+div >.oneA{
+font-size: 72px;
+}
+div >.twoB {
+  font-size: 9px;
+}
+div >.threeC{
+    font-size: 24px;
+}
+.alignBaseline{
+  align-items: baseline;
+}
