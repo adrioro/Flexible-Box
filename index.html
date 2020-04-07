@@ -6,16 +6,207 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Flexbox</title>
       <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+      <link rel="shortcut icon" href="http://www.cerrottiux.com/img/favicon.png">
    </head>
 
    <body>
+      <h1>FLEX CONTAINER</h1>
 
-      <div class="flex-container">
-         <div>1</div>
-         <div>2</div>
-         <div>3</div>
+      <pre>
+      &lt;div class="flex-container"&gt;
+     </pre>
+
+      <div class="">
+         <p>For the container to become flexible we need to set the display property to flex.
+            Go to your css and set the display property:</p>
+         <p> .flex-container {
+            display: flex;
+            }</p>
+      </div>
+      <p>Without setting any further flex container properties this is how the file would look, assuming you added some color properties to the boxes.</p>
+      <div class="first flex-container">
+         <div>A</div>
+         <div>B</div>
+         <div>C</div>
+      </div>
+      <h1>FLEX-DIRECTION PROPERTY</h1>
+      <p>This property is going to define the way you stack the flex items.</p>
+
+      <h2>Column</h2>
+      <p>.flex-container {<br>
+         display: flex;<br>
+         flex-direction: column;<br>
+         }</p>
+      <div class="flex-container directionColumn">
+
+         <div>A</div>
+         <div>B</div>
+         <div>C</div>
+      </div>
+
+
+
+
+
+      <h2>Colum Reverse</h2>
+      <p>.flex-container {
+         display: flex;
+         flex-direction: row-reverse;
+         }</p>
+
+      <div class="rowReverse flex-container">
+         <div>A</div>
+         <div>B</div>
+         <div>C</div>
+      </div>
+
+      <h1>FLEX-WRAP PROPERTY</h1>
+      <p>We use it when we need to wrap all the items. I added some items to demostrate the property.</p>
+      <p>flex-wrap: wrap;</p>
+      <div class="wrap flex-container">
+         <div>A</div>
+         <div>B</div>
+         <div>C</div>
+         <div>D</div>
+         <div>E</div>
+         <div>F</div>
+         <div>G</div>
+         <div>H</div>
+         <div>I</div>
+         <div>J</div>
+         <div>K</div>
+      </div>
+      <h2>No Wrap (Default)</h2>
+      <p>This is a default property. Resize the browser to see how it displays.</p>
+      <p>flex-wrap: nowrap;</p>
+
+      <div class="noWrap  flex-container">
+         <div>A</div>
+         <div>B</div>
+         <div>C</div>
+         <div>D</div>
+         <div>E</div>
+         <div>F</div>
+         <div>G</div>
+         <div>H</div>
+         <div>I</div>
+         <div>J</div>
+         <div>K</div>
+      </div>
+
+      <h2>Wrap Reverse</h2>
+      <p>This is a default property. Resize the browser to see how it displays.</p>
+      <p>flex-wrap: wrap-reverse;</p>
+
+      <div class="wrapReverse  flex-container">
+         <div>A</div>
+         <div>B</div>
+         <div>C</div>
+         <div>D</div>
+         <div>E</div>
+         <div>F</div>
+         <div>G</div>
+         <div>H</div>
+         <div>I</div>
+         <div>J</div>
+         <div>K</div>
+      </div>
+
+      <h1>FLEX-FLOW PROPERTY</h1>
+      PLEASE NOTE: It applies to a parent flex container element.
+      <p>This property sets flex-direction and flex-wrap.It defines the flex container’s main and cross axes.</p>
+      <p>.flex-container {<br>
+         display: flex;<br>
+         flex-flow: row wrap;<br>
+         }</p>
+
+      <div class="flexFlow  flex-container">
+         <div>A</div>
+         <div>B</div>
+         <div>C</div>
+         <div>D</div>
+         <div>E</div>
+         <div>F</div>
+         <div>G</div>
+         <div>H</div>
+         <div>I</div>
+         <div>J</div>
+         <div>K</div>
+      </div>
+
+      <h1>JUSTIFY-CONTENT PROPERTY</h1>
+      <h2>Center</h2>
+      <p>We used this property to align the flex items.</p>
+      <h2>Center</h2>
+      <p>justify-content: center;</p>
+
+      <div class="justifyContent  flex-container">
+         <div>A</div>
+         <div>B</div>
+         <div>C</div>
+      </div>
+
+      <h2>Flex-start</h2>
+      <p>justify-content: flex-start;</p>
+      <div class="flexStart  flex-container">
+         <div>A</div>
+         <div>B</div>
+         <div>C</div>
+      </div>
+
+      <h2>Flex-end</h2>
+      <p>justify-content: flex-end;</p>
+      <div class="flexEnd  flex-container">
+         <div>A</div>
+         <div>B</div>
+         <div>C</div>
+      </div>
+      <h2>Space-around</h2>
+      <p>justify-content: space-around;</p>
+      <div class="spaceAround  flex-container">
+         <div>A</div>
+         <div>B</div>
+         <div>C</div>
+      </div>
+
+      <h2>Space-between</h2>
+      <p>justify-content: space-between;</p>
+      <div class="spaceBetween  flex-container">
+         <div>A</div>
+         <div>B</div>
+         <div>C</div>
+      </div>
+
+      <h1>ALIGN-ITEMS PROPERTY</h1>
+
+      <h2>Flex Start</h2>
+      <p>align-items: flex-start;</p>
+      <div class="biggerContainer flexStart  flex-container">
+         <div>A</div>
+      </div>
+
+      <h2>Center + Justify-content</h2>
+      To achieve a center through both, the vertical and the horizontal axis, we need to add the justify-content property.
+      <p>align-items: center;<br>
+         justify-content: center;</p>
+      <div class="biggerContainer alignCenterPlus  flex-container">
+         <div>A</div>
+      </div>
+
+      <h2>Center</h2>
+      <p>In this case we use only the align property so the item centers within the vertical (column) axis.</p>
+      <p>align-items: center</p>
+      <div class="biggerContainer alignCenter  flex-container">
+         <div>A</div>
+      </div>
+
+      <h2>Flex End</h2>
+      <p>align-items: flex-end;</p>
+      <div class="biggerContainer flexEnd flex-container">
+         <div>A</div>
 
       </div>
+
 
       <div id="root"></div>
       <script src="main.js" type="text/javascript"></script>

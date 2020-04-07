@@ -1,3 +1,76 @@
+body{
+  margin-left: 33px;
+}
 .flex-container {
   display: flex;
+  background-color: rgb(149, 49, 31);
+}
+.flex-container > div {
+  background-color: #67bfc2;
+  margin: 33px;
+  padding: 33px;
+  font-size: 30px;
+  width: 45px;
+  text-align: center;
+  font-size: 45px;
+  font-family: sans-serif;
+    }
+
+  .biggerContainer {
+    height: 420px;
+}
+
+
+/* Flex direction */
+.directionColumn{
+  flex-direction: column;
+}
+
+
+.rowReverse {
+  flex-direction: column-reverse;
+  }
+  /* Flex wrap */
+  .wrap {
+    flex-wrap: wrap;
+  }
+  .wrapReverse {
+    flex-wrap: wrap-reverse;
+  }
+    /* Flex-flow */
+
+    .flexFlow{
+      flex-flow: row wrap;
+    }
+    /* Justify-content */
+.justifyContent {
+  justify-content: center;
+}
+.flexStart {
+  justify-content: flex-start;
+}
+.flexEnd {
+  justify-content: flex-end;
+}
+.spaceAround {
+  justify-content: space-around;
+}
+.spaceBetween {
+  justify-content: space-between;
+}
+/*Align-items*/
+
+.alignCenterPlus{
+  align-items: center;
+  justify-content: center;
+}
+.alignCenter{
+  align-items: center;
+
+}
+.flexStart {
+  align-items: flex-start;
+}
+.flexEnd {
+  align-items: flex-end;
 }
