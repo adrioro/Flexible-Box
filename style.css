@@ -93,3 +93,6 @@ div >.threeC{
 .alignBaseline{
   align-items: baseline;
 }
+.growStretch {
+  align-items: stretch;
+}
