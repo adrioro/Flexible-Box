@@ -5,6 +5,18 @@ body{
   display: flex;
   background-color: rgb(149, 49, 31);
 }
+.logo {
+  background-color: rgb(255, 255, 255);
+}
+.logoImage {
+  width: 18px;
+  height: auto;
+}
+.link {
+
+  margin-top: 45px;
+}
+
 .flex-container > div {
   background-color: #67bfc2;
   margin: 33px;
