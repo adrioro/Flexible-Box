@@ -1,23 +1,26 @@
-body{
+body {
   margin-left: 33px;
 }
+
 .flex-container {
   display: flex;
   background-color: rgb(149, 49, 31);
 }
+
 .logo {
   background-color: rgb(255, 255, 255);
 }
+
 .logoImage {
   width: 18px;
   height: auto;
 }
-.link {
 
-  margin-top: 45px;
+.link {
+  margin-top: 54px;
 }
 
-.flex-container > div {
+.flex-container>div {
   background-color: #67bfc2;
   margin: 33px;
   padding: 33px;
@@ -26,88 +29,103 @@ body{
   text-align: center;
   font-size: 45px;
   font-family: sans-serif;
-    }
-
-  .biggerContainer {
-    height: 420px;
 }
 
+.biggerContainer {
+  height: 420px;
+}
 
 /* Flex direction */
-.directionColumn{
+.directionColumn {
   flex-direction: column;
 }
 
-
 .rowReverse {
   flex-direction: column-reverse;
-  }
-  /* Flex wrap */
-  .wrap {
-    flex-wrap: wrap;
-  }
-  .wrapReverse {
-    flex-wrap: wrap-reverse;
-  }
-    /* Flex-flow */
+}
 
-    .flexFlow{
-      flex-flow: row wrap;
-    }
-    /* Justify-content */
+/* Flex wrap */
+.wrap {
+  flex-wrap: wrap;
+}
+
+.wrapReverse {
+  flex-wrap: wrap-reverse;
+}
+
+/* Flex-flow */
+.flexFlow {
+  flex-flow: row wrap;
+}
+
+/* Justify-content */
 .justifyContent {
   justify-content: center;
 }
+
 .flexStart {
   justify-content: flex-start;
 }
+
 .flexEnd {
   justify-content: flex-end;
 }
+
 .spaceAround {
   justify-content: space-around;
 }
+
 .spaceBetween {
   justify-content: space-between;
 }
-/*Align-items*/
 
-.alignCenterPlus{
+/*Align-items*/
+.alignCenterPlus {
   align-items: center;
   justify-content: center;
 }
-.alignCenter{
-  align-items: center;
 
+.alignCenter {
+  align-items: center;
 }
+
 .flexStart {
   align-items: flex-start;
 }
+
 .flexEnd {
   align-items: flex-end;
 }
+
 .stretching {
   align-items: stretch;
 }
+
 .strechBox {
   background-color: rgb(149, 49, 31);
   height: 450px;
 }
-div >.oneA{
-font-size: 72px;
+
+div>.oneA {
+  font-size: 72px;
 }
-div >.twoB {
+
+div>.twoB {
   font-size: 9px;
 }
-div >.threeC{
-    font-size: 24px;
+
+div>.threeC {
+  font-size: 24px;
 }
-.alignBaseline{
+
+.alignBaseline {
   align-items: baseline;
 }
+
 .growStretch {
   align-items: stretch;
 }
+
 .flexShrink {
   align-items: stretch;
 }
