@@ -232,23 +232,41 @@
       <h1>PROPERTY OF THE CHILD ELEMENTS</h1>
 
       <h2>Order</h2>
-      <p>Specifies the order of the flex items.</p>
+      <p>It specifies the order of the flex items.</p>
       <p>&lt;div style="order: #"&gt;</p>
       <div class="flex-container">
-         <div style="order: 4">A</div>
-         <div style="order: 2">B</div>
-         <div style="order: 5">C</div>
-         <div style="order: 3">D</div>
-         <div style="order: 1">E</div>
+         <div style="order: 4">1</div>
+         <div style="order: 2">2</div>
+         <div style="order: 5">3</div>
+         <div style="order: 3">4</div>
+         <div style="order: 1">5</div>
       </div>
 
       <h2>Grow</h2>
       <p>The value must be a number, default value is 0.</p>
       <p>&lt;div style="flex-grow: #"&gt;</p>
+      <p>align-items: stretch;</p>
       <div class="growStretch flex-container">
          <div style="flex-grow: 1">A</div>
          <div style="flex-grow: 1">B</div>
          <div style="flex-grow: 8">C</div>
+      </div>
+
+      <h2>Flex-shrink</h2>
+      <p>It specifies how much a flex item will shrink relative to the rest of the flex items..</p>
+      <p>&lt;div style="flex-shrink: 0"&gt;</p>
+      <p>align-items: stretch;</p>
+      <div class="flexShrink flex-container">
+         <div>1</div>
+         <div>2</div>
+         <div style="flex-shrink: 0">3</div>
+         <div>4</div>
+         <div>5</div>
+         <div>6</div>
+         <div>7</div>
+         <div>8</div>
+         <div>9</div>
+         <div>10</div>
       </div>
 
 

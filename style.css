@@ -96,3 +96,6 @@ div >.threeC{
 .growStretch {
   align-items: stretch;
 }
+.flexShrink {
+  align-items: stretch;
+}
